@@ -1,13 +1,16 @@
 package dev.rsd.LogLLMSummary;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-public class LogLlmSummaryApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(LogLlmSummaryApplication.class, args);
-	}
+@EnableScheduling
+@ConfigurationPropertiesScan
+public class LogSummaryApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(LogSummaryApplication.class, args);
+    }
+}
 
 }
